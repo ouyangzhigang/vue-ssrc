@@ -7,7 +7,11 @@ module.exports = async (context, renderer, template) => {
   try {
     const appString = await renderer.renderToString(content);
 
-    const { title } = context.meta.inject();
+    if (content.router.currentRoute.fullPath !== context.path) {
+      return context.redirect(content.router.currentRoute.fullPath);
+    }
+
+    const { title } = content.meta.inject();
 
     const html = ejs.render(template, {
       title: title.text(),

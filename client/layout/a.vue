@@ -9,6 +9,9 @@
 
 <script>
 export default {
+  mataInfo: {
+    title: 'page a'
+  },
   data () {
     return {
       name: 'a'

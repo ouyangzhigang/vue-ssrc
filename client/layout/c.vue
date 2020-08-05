@@ -13,6 +13,9 @@
 
 <script>
 export default {
+  mataInfo: {
+    title: 'page c'
+  },
   name: 'c',
   data () {
     return {

@@ -1,25 +1,25 @@
 {
-  "publicPath": "http://127.0.0.1:8899/dist/",
+  "publicPath": "/dist/",
   "all": [
-    "a.a5e05c01.js",
-    "app.b3d2f5ce.js",
-    "b.853b4882.js",
-    "c.05454c4f.js",
+    "a.37d1f1f9.js",
+    "app.6d27827a.js",
+    "b.c6559c4a.js",
+    "c.d2e380b0.js",
     "style.css",
-    "vendor.67f0e9eb.js"
+    "vendor.6c16a6bc.js"
   ],
   "initial": [
     "style.css",
-    "app.b3d2f5ce.js",
-    "vendor.67f0e9eb.js"
+    "app.6d27827a.js",
+    "vendor.6c16a6bc.js"
   ],
   "async": [
-    "a.a5e05c01.js",
-    "b.853b4882.js",
-    "c.05454c4f.js"
+    "a.37d1f1f9.js",
+    "b.c6559c4a.js",
+    "c.d2e380b0.js"
   ],
   "modules": {
-    "6766c9cc": [
+    "2f5fe154": [
       4,
       1
     ],
@@ -47,7 +47,7 @@
     "56106ee9": [
       5
     ],
-    "8a898c18": [
+    "fa975d08": [
       4,
       1
     ],
@@ -67,7 +67,7 @@
       4,
       1
     ],
-    "c82c2c3a": [
+    "63e3016b": [
       4,
       1
     ]
