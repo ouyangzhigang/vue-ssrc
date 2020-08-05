@@ -13,6 +13,20 @@ Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(Meta);
 
+Vue.mixin({
+  beforeRouteUpdate (to, from, next) {
+    const { asyncData } = this.$options
+    if (asyncData) {
+      asyncData({
+        store: this.$store,
+        route: to
+      }).then(next).catch(next)
+    } else {
+      next()
+    }
+  }
+})
+
 export default () => {
   const router = createRouter();
   const store = createStore();

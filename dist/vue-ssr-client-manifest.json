@@ -2,7 +2,7 @@
   "publicPath": "/dist/",
   "all": [
     "a.37d1f1f9.js",
-    "app.6d27827a.js",
+    "app.c71589d5.js",
     "b.c6559c4a.js",
     "c.d2e380b0.js",
     "style.css",
@@ -10,7 +10,7 @@
   ],
   "initial": [
     "style.css",
-    "app.6d27827a.js",
+    "app.c71589d5.js",
     "vendor.6c16a6bc.js"
   ],
   "async": [
