@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "service side render",
   "main": "index.js",
+  "sideEffects": [
+    "*.css",
+    "*.styl",
+    "*.stylus",
+    "*.vue"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist && rimraf server-build",
@@ -14,7 +20,8 @@
     "prebuild": "npm run clean",
     "build": "npm run build:client && npm run build:server",
     "start": "cross-env NODE_ENV=production node server/server_pro.js",
-    "practice": "npx webpack-dev-server --config build/webpack.practice.conf.js"
+    "practice": "npx webpack-dev-server --config build/webpack.practice.conf.js",
+    "http": "npx http-server -p 3333 dist"
   },
   "author": "ouyangzhigang",
   "license": "ISC",
@@ -27,6 +34,7 @@
     "koa": "^2.4.1",
     "koa-router": "^7.4.0",
     "koa-send": "^5.0.1",
+    "sha1": "^1.1.1",
     "vue": "^2.6.11",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.0.1",
@@ -43,6 +51,7 @@
     "cross-env": "^7.0.2",
     "css-loader": "^4.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "http-server": "^0.12.3",
     "memory-fs": "^0.5.0",
     "mini-css-extract-plugin": "^0.9.0",
     "nodemon": "^2.0.4",

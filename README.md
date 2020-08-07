@@ -1,6 +1,14 @@
 # vue-ssrc
 Vue server side render custom project
 
+### 
+
+* client: vue vuex vue-router axios stylus
+
+* script: cross-env webpack nodemon concurrently ramrif
+
+* server: apiCloud restClient koa ejs vue-server-renderer memory-fs vue-meta
+
 ready
 ```linux
 npm install

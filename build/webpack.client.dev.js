@@ -15,7 +15,7 @@ module.exports = merge(Common, {
   output: {
     filename: '[name].[hash:8].js',
     path: Resolve('dist'),
-    publicPath: 'http://127.0.0.1:8899/dist/'
+    publicPath: '/dist/'
   },
   module: {
     rules: [

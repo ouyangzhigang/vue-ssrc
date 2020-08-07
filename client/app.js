@@ -6,12 +6,14 @@ import Meta from 'vue-meta';
 import App from './app.vue';
 import createStore from './store/index';
 import createRouter from './router/index';
+import Notifycation from './components/notification';
 
 import './assets/styles/global.styl';
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(Meta);
+Vue.use(Notifycation);
 
 Vue.mixin({
   beforeRouteUpdate (to, from, next) {

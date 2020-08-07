@@ -1,5 +1,5 @@
 <template>
-<main>
+<main id="app">
     app, {{greeting}}
     <router-view :key="$route.fullPath"></router-view>
 </main>

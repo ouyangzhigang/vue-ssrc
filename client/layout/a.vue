@@ -4,6 +4,8 @@
       page {{name}}
     </p>
     <h1>what is it, no content</h1>
+
+    <button @click="notify">click notify</button>
   </div>
 </template>
 
@@ -15,6 +17,14 @@ export default {
   data () {
     return {
       name: 'a'
+    }
+  },
+  methods: {
+    notify () {
+      this.$notify({
+        content: 'hello world!',
+        btn: 'close x'
+      })
     }
   }
 }

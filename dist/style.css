@@ -1,11 +1,24 @@
 
-p[data-v-f36c5140] {
+p[data-v-2b2915c3] {
   font-size: 2em;
   text-align: center;
 }
 
 body {
   height: 100vh;
+  background: #00f;
+}
+
+.com-notification[data-v-49993880] {
+  background: rgba(0,0,0,0.5);
+  color: #008000;
+  padding: 25px 48px;
+  min-width: 299px;
+  font-size: 29px;
+  align-items: center;
+  transition: all 0.3s;
+}
+.content[data-v-49993880] {
   background: #00f;
 }
 
