@@ -9,7 +9,7 @@ body {
   background: #00f;
 }
 
-.com-notification[data-v-49993880] {
+.com-notification[data-v-32b5c18b] {
   background: rgba(0,0,0,0.5);
   color: #008000;
   padding: 25px 48px;
@@ -18,7 +18,7 @@ body {
   align-items: center;
   transition: all 0.3s;
 }
-.content[data-v-49993880] {
-  background: #00f;
+.content[data-v-32b5c18b] {
+  background: #f00;
 }
 

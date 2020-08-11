@@ -15,7 +15,7 @@ module.exports = merge(Common, {
   output: {
     filename: '[name].[hash:8].js',
     path: Resolve('dist'),
-    publicPath: '/dist/'
+    publicPath: 'http://127.0.0.1:8899/dist/'
   },
   module: {
     rules: [
@@ -44,6 +44,7 @@ module.exports = merge(Common, {
   devServer: {
     headers: {'Access-Control-Allow-Origin': '*'},
     hot: true,
+    host: '0.0.0.0',
     port: 8899,
     overlay: {errors: true},
     quiet: false
