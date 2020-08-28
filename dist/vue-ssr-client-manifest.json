@@ -2,7 +2,7 @@
   "publicPath": "/dist/",
   "all": [
     "a.19589f2e.js",
-    "app.43caf1b6.js",
+    "app.4ed88af9.js",
     "b.4d746f9c.js",
     "c.8a1da1fc.js",
     "style.css",
@@ -10,7 +10,7 @@
   ],
   "initial": [
     "style.css",
-    "app.43caf1b6.js",
+    "app.4ed88af9.js",
     "vendor.4a1afb4e.js"
   ],
   "async": [
@@ -23,7 +23,7 @@
       4,
       1
     ],
-    "b8bdec66": [
+    "242cdbbc": [
       4,
       1
     ],
@@ -59,7 +59,7 @@
     "56106ee9": [
       5
     ],
-    "12150c16": [
+    "413e024a": [
       4,
       1
     ],
@@ -87,7 +87,7 @@
       4,
       1
     ],
-    "4fb7ac38": [
+    "226cb239": [
       4,
       1
     ],

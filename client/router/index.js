@@ -4,7 +4,7 @@ const Component = (layout) => () => import(/* webpackChunkName: "[request]" */`.
 
 const routes = [
   {
-    path: '*',
+    path: '/',
     redirect: '/a'
   },
   {

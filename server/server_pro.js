@@ -5,6 +5,7 @@ const pageRouter = require('./router/pro_ssr.js');
 const apiRouter = require('./router/api')
 const createDB = require('./db/db');
 const config = require('../app.config');
+const koaBody = require('koa-body');
 
 const DB = createDB(config.db.appId, config.db.appKey);
 const app = new Koa();
@@ -23,20 +24,22 @@ app.use(async (context, next) => {
 
 app.use(async (ctx, next) => {
   ctx.db = DB;
+  console.log('Request Body  --->', ctx.request.body);
   await next();
 })
 
 app.use(async (ctx, next) => {
-  if(ctx.path === '/favicon.ico') {
+  if (ctx.path === '/favicon.ico') {
     await send(ctx, '/favicon.ico', { root: path.join(__dirname, '../') });
   } else {
     await next();
   }
 })
 
+app.use(koaBody());
+app.use(apiRouter.routes()).use(apiRouter.allowedMethods());
 app.use(staticRouter.routes()).use(staticRouter.allowedMethods());
 app.use(pageRouter.routes()).use(pageRouter.allowedMethods());
-app.use(apiRouter.routes()).use(apiRouter.allowedMethods());
 
 app.listen(3333, '0.0.0.0', () => {
   console.log('server is listening on http://localhost:3333/dist/');

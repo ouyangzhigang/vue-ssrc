@@ -28,7 +28,7 @@ module.exports = (appId, appKey) => {
 
     return {
       'X-APICloud-AppId': appId,
-      'X-APICloud-AppKey': `${sha1(`${appId}UZ${appKey}UZ${now}`)}.${now}`
+      'X-APICloud-AppKey': `${sha(`${appId}UZ${appKey}UZ${now}`)}.${now}`
     }
   }
 
@@ -37,6 +37,15 @@ module.exports = (appId, appKey) => {
       return handleRequest(await request.get(`/${className}`, {
         headers: getHeaders()
       }))
+    },
+    async addTodo (todo) {
+      return handleRequest(await request.post(
+        `/${className}`,
+        todo,
+        {
+          headers: getHeaders()          
+        }
+      ))
     }
   }
 }
